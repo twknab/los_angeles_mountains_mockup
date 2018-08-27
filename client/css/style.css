@@ -27,18 +27,20 @@ html, body {
   font-family: 'Oswald', sans-serif; }
 
 .section-number {
-  font-size: 12em;
+  font-size: 9.3em;
   font-weight: 600;
   color: #414f6ba1;
   display: inline-block; }
 
 .section-title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   display: inline;
   position: relative;
-  bottom: 37px;
-  right: 40px; }
+  bottom: 28px;
+  right: 33px;
+  font-size: 2.1em;
+  color: #414f6b; }
 
 .section-text {
   font-family: 'Lato', sans-serif;
@@ -46,16 +48,19 @@ html, body {
 
 #history-column {
   padding-left: 19% !important;
-  padding-right: 29% !important; }
+  padding-right: 29% !important;
+  margin-top: 1.7%; }
   #history-column p {
     position: relative;
-    bottom: 33px;
-    left: 97px; }
+    bottom: 24px;
+    left: 86px; }
 
 #climb div:nth-child(2) p {
   position: relative;
-  top: 21px;
-  right: 96px; }
+  top: 9px;
+  right: 235px;
+  margin-right: 14%;
+  font-weight: 100; }
 
 #climb-column {
   padding-left: 19% !important; }
@@ -103,7 +108,7 @@ html, body {
     height: 100%;
     margin: 0 auto; }
     .container-fluid #history-slider div:nth-child(2) {
-      margin-top: 34%;
+      margin-top: 27%;
       background-color: #414f6bdb;
       height: 197px; }
   .container-fluid #schedule {
@@ -114,14 +119,42 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0 auto; }
+    .container-fluid #schedule #schedule-box {
+      margin: 13% 2% 29% 43%;
+      width: 352px;
+      padding-left: 6%;
+      padding-bottom: 1%;
+      padding-top: 2%;
+      background-color: #ffffffa3;
+      font-family: 'Lato', sans-serif; }
+      .container-fluid #schedule #schedule-box h1 {
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        color: #414f6b;
+        font-size: 2.2em;
+        margin-bottom: 20px; }
+      .container-fluid #schedule #schedule-box table {
+        padding-bottom: 2%;
+        font-weight: 100; }
+        .container-fluid #schedule #schedule-box table tr td {
+          border: none;
+          padding: .05em; }
+        .container-fluid #schedule #schedule-box table tr:nth-child(3) td, .container-fluid #schedule #schedule-box table tr:nth-child(4) td {
+          padding-top: 7%; }
   .container-fluid #footer {
     background-color: #414f6b;
     color: #63769d;
     text-transform: uppercase;
     font-style: italic;
-    font-family: 'Lato', sans-serif; }
+    font-family: 'Lato', sans-serif;
+    height: 81px; }
+    .container-fluid #footer div {
+      height: 81px; }
+      .container-fluid #footer div nav {
+        height: 81px; }
     .container-fluid #footer p {
       margin: 0px !important;
       font-weight: 900; }
     .container-fluid #footer .footer-nav {
-      padding: 0% 2% 0% 21% !important; }
+      padding: 0% 16% 0% 21% !important; }
