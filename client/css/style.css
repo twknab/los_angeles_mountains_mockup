@@ -1,6 +1,64 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,900i|Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900i|Oswald:400,500,600,700");
 html, body {
   height: 100%; }
+
+.navbar {
+  padding: 0% 15% 0% 21% !important; }
+  .navbar ul li {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    font-size: .74em;
+    letter-spacing: 1.7px;
+    font-family: 'Lato', sans-serif; }
+
+.sticky-navigation {
+  height: 73px; }
+
+.bg-white {
+  background-color: #fff; }
+
+.nav-link {
+  padding: 0px 0px 1px 0px !important;
+  margin: 0px 25px; }
+
+.section-number,
+.section-title {
+  font-family: 'Oswald', sans-serif; }
+
+.section-number {
+  font-size: 12em;
+  font-weight: 600;
+  color: #414f6ba1;
+  display: inline-block; }
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+  position: relative;
+  bottom: 37px;
+  right: 40px; }
+
+.section-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100; }
+
+#history-column {
+  padding-left: 19% !important;
+  padding-right: 29% !important; }
+  #history-column p {
+    position: relative;
+    bottom: 33px;
+    left: 97px; }
+
+#climb div:nth-child(2) p {
+  position: relative;
+  top: 21px;
+  right: 96px; }
+
+#climb-column {
+  padding-left: 19% !important; }
 
 .container-fluid {
   padding-right: 0px !important;
@@ -15,44 +73,55 @@ html, body {
     height: 100%;
     margin: 0 auto; }
     .container-fluid #hero-image div {
-      margin-left: 18.6%;
-      margin-top: .3%;
-      padding-bottom: 50%; }
-      @media screen and (max-width: 730px) {
-        .container-fluid #hero-image div {
-          margin-left: 9%; } }
-      @media screen and (max-width: 400px) {
-        .container-fluid #hero-image div {
-          margin-left: 3%;
-          margin-top: .5%; } }
+      padding-bottom: 48%; }
+      .container-fluid #hero-image div nav {
+        background-color: none !important; }
+        .container-fluid #hero-image div nav ul li {
+          color: white; }
+        .container-fluid #hero-image div nav ul a {
+          color: white !important;
+          border-bottom: 1px solid white; }
+          .container-fluid #hero-image div nav ul a:hover {
+            color: #414f6b !important;
+            border-bottom-color: #414f6b; }
       .container-fluid #hero-image div ul {
-        list-style: none;
-        display: inline;
-        margin-left: 37%; }
-        @media screen and (max-width: 730px) {
-          .container-fluid #hero-image div ul {
-            margin-left: 33%; } }
-        @media screen and (max-width: 525px) {
-          .container-fluid #hero-image div ul {
-            margin-left: 7%; } }
-        @media screen and (max-width: 400px) {
-          .container-fluid #hero-image div ul {
-            margin-left: 3%; } }
-        .container-fluid #hero-image div ul li {
-          display: inline;
-          color: white;
-          text-transform: uppercase;
-          font-style: italic;
-          font-weight: 300;
-          font-size: .74em;
-          letter-spacing: 1.7px;
-          font-family: 'Lato', sans-serif;
-          margin-right: 39px; }
-          .container-fluid #hero-image div ul li a {
-            color: white;
-            border-bottom: 1px solid white;
-            padding-bottom: 2px; }
-            .container-fluid #hero-image div ul li a:hover {
-              color: #414f6b;
-              border-bottom-color: #414f6b;
-              text-decoration: none; }
+        list-style: none; }
+  .container-fluid #sticky-nav div ul li {
+    color: #414f6b; }
+  .container-fluid #sticky-nav div ul a {
+    color: #414f6b !important;
+    border-bottom: 1px solid #414f6b; }
+    .container-fluid #sticky-nav div ul a:hover {
+      color: #939393 !important;
+      border-bottom-color: #939393; }
+  .container-fluid #history-slider {
+    background-image: url(../img/history-mountains-background.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+    .container-fluid #history-slider div:nth-child(2) {
+      margin-top: 34%;
+      background-color: #414f6bdb;
+      height: 197px; }
+  .container-fluid #schedule {
+    background-image: url(../img/schedule-mountains-background.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+  .container-fluid #footer {
+    background-color: #414f6b;
+    color: #63769d;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lato', sans-serif; }
+    .container-fluid #footer p {
+      margin: 0px !important;
+      font-weight: 900; }
+    .container-fluid #footer .footer-nav {
+      padding: 0% 2% 0% 21% !important; }

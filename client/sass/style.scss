@@ -2,9 +2,79 @@
 // Tim Knab - August 2018
 
 // Import Oswald Bold and Lato Fonts at necessary Strengths:
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,900i|Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900i|Oswald:400,500,600,700');
+$darkBlue: #414f6b;
+$lightBlue: #63769d;
+$lightGray: #939393;
 html, body {
   height: 100%;
+}
+.navbar {
+  padding: 0% 15% 0% 21% !important;
+  ul {
+    li {
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 300;
+      font-size: .74em;
+      letter-spacing: 1.7px;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+}
+.sticky-navigation {
+  height: 73px;
+}
+.bg-white {
+  background-color: #fff;
+}
+.nav-link {
+  padding: 0px 0px 1px 0px !important;
+  margin: 0px 25px;
+}
+.section-number,
+.section-title {
+  font-family: 'Oswald', sans-serif;
+}
+
+.section-number {
+  font-size: 12em;
+  font-weight: 600;
+  color: #414f6ba1;
+  display: inline-block;
+}
+.section-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+  position: relative;
+  bottom: 37px;
+  right: 40px;
+}
+.section-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+#history-column {
+  padding-left: 19% !important;
+  padding-right: 29% !important;
+  p {
+    position: relative;
+    bottom: 33px;
+    left: 97px;
+  }
+}
+#climb {
+  div:nth-child(2) {
+    p {
+      position: relative;
+      top: 21px;
+      right: 96px;
+    } 
+  }
+}
+#climb-column {
+  padding-left: 19% !important;
 }
 .container-fluid {
   padding-right: 0px !important;
@@ -20,52 +90,81 @@ html, body {
     height: 100%;
     margin: 0 auto;
     div {
-      margin-left: 18.6%;
-      margin-top: .3%;
-      padding-bottom: 50%;
-      @media screen and (max-width: 730px) {
-        margin-left: 9%;
-      }
-      @media screen and (max-width: 400px) {
-        margin-left: 3%;
-        margin-top: .5%;
-      }
-      ul {
-        list-style: none;
-        display: inline;
-        margin-left: 37%;
-        @media screen and (max-width: 730px) {
-          margin-left: 33%;
-        }
-        @media screen and (max-width: 525px) {
-          margin-left: 7%;
-        }
-        @media screen and (max-width: 400px) {
-          margin-left: 3%;
-        }
-        li {
-          display: inline;
-          color: white;
-          text-transform: uppercase;
-          font-style: italic;
-          font-weight: 300;
-          font-size: .74em;
-          letter-spacing: 1.7px;
-          font-family: 'Lato',
-          sans-serif;
-          margin-right: 39px;
-          a {
+      padding-bottom: 48%;
+      nav {
+        background-color: none !important;
+        ul {
+          li {
             color: white;
+          }
+          a {
+            color: white !important;
             border-bottom: 1px solid white;
-            padding-bottom: 2px;
             &:hover {
-              color: #414f6b;
-              border-bottom-color: #414f6b;
-              text-decoration: none;
+              color: $darkBlue !important;
+              border-bottom-color: $darkBlue;
             }
           }
         }
       }
+      ul {
+        list-style: none;
+      }
+    }
+  }
+  #sticky-nav {
+    div {
+      ul {
+        li {
+          color: $darkBlue;
+        }
+        a {
+          color: $darkBlue !important;
+          border-bottom: 1px solid $darkBlue;
+          &:hover {
+            color: $lightGray !important;
+            border-bottom-color: $lightGray;
+          }
+        }
+      }
+    }
+  }
+  #history-slider {
+    background-image: url(../img/history-mountains-background.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    div:nth-child(2) {
+      margin-top: 34%;
+      background-color: #414f6bdb;
+      height: 197px;
+    }
+  }
+  #schedule {
+    background-image: url(../img/schedule-mountains-background.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  #footer {
+    background-color: $darkBlue;
+    color: $lightBlue;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    p {
+      margin: 0px !important;
+      font-weight: 900;
+    }
+    .footer-nav {
+      padding: 0% 2% 0% 21% !important;
     }
   }
 }
