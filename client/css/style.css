@@ -46,24 +46,15 @@ html, body {
   font-family: 'Lato', sans-serif;
   font-weight: 100; }
 
-#history-column {
-  padding-left: 19% !important;
-  padding-right: 29% !important;
-  margin-top: 1.7%; }
-  #history-column p {
-    position: relative;
-    bottom: 24px;
-    left: 86px; }
-
 #climb div:nth-child(2) p {
   position: relative;
   top: 9px;
-  right: 235px;
-  margin-right: 14%;
+  right: 148px;
+  margin-right: 9%;
   font-weight: 100; }
 
 #climb-column {
-  padding-left: 19% !important; }
+  padding-left: 23% !important; }
 
 .container-fluid {
   padding-right: 0px !important;
@@ -111,6 +102,45 @@ html, body {
       margin-top: 27%;
       background-color: #414f6bdb;
       height: 197px; }
+  .container-fluid #history-text {
+    z-index: 100;
+    position: absolute;
+    width: 795px;
+    margin-left: 19%;
+    margin-top: 1.5%; }
+  .container-fluid .slider {
+    width: 1600px;
+    height: 905px;
+    overflow: hidden;
+    position: relative; }
+    .container-fluid .slider ul {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .container-fluid .slider ul li {
+        position: relative;
+        float: left;
+        width: 1600px;
+        height: 905px; }
+  .container-fluid #slider-column {
+    z-index: -1000; }
+  .container-fluid #navigation-slider {
+    background-color: #414f6bdb;
+    height: 197px;
+    margin-top: -197px; }
+  .container-fluid #navigation {
+    margin-left: 19%; }
+    .container-fluid #navigation ul {
+      list-style: none;
+      display: inline-block;
+      margin-bottom: 0px; }
+      .container-fluid #navigation ul li {
+        display: inline;
+        margin-right: 6px; }
+    .container-fluid #navigation img {
+      width: 221px;
+      height: 134px; }
   .container-fluid #schedule {
     background-image: url(../img/schedule-mountains-background.jpg);
     background-size: cover;
@@ -148,7 +178,7 @@ html, body {
     text-transform: uppercase;
     font-style: italic;
     font-family: 'Lato', sans-serif;
-    height: 81px; }
+    height: 82px; }
     .container-fluid #footer div {
       height: 81px; }
       .container-fluid #footer div nav {
