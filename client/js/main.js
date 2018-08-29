@@ -1,9 +1,38 @@
 $( document ).ready( function(){
 
+  /*
+    1. Smooth Scrolling
+    2. Jquery Custom Slider
+    3. Jquery Custom Tabs
+    4. Jquery Custom Accordian
+
+
+  */
+
   //**********************/
-  // JQUERY CUSTOM SLIDER
+  // 1. SMOOTH SCROLLING
   //**********************/
-  
+
+  // Add smooth scrolling to all on-page anchor links that are not empty:
+  $('a[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+
+  //**********************/
+  // 2. JQUERY CUSTOM SLIDER
+  //**********************/
+
   // Get window width and height to build slider dimensions:
   var slideCount = $('.slider ul li').length;
   var slideWidth = $(window).width();
@@ -45,6 +74,16 @@ $( document ).ready( function(){
       });
     });
   });
+
+
+  //**********************/
+  // 3. JQUERY CUSTOM TABS
+  //**********************/
+
+  //**********************/
+  // 4. JQUERY CUSTOM ACCORDION
+  //**********************/
+
 
 
 });
