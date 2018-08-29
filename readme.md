@@ -11,6 +11,12 @@ With the downloadable font, I have a few options:
 
 For simplicity and speed, I chose option #2. However, an idea I had, if I was to use option #1, was to slice the mountains image along the mountains themselves (using my Wacom Bamboo stylus), so that the hero image is broken into 3 pieces (1) the background sky layer, (2) the foreground mountain layer, and (3) the text itself (self-hosted as a web-font). That approach would be how I'd tackle it from  a more complex way. However, again, for speed and simplicity in this mockup, I output the Bebas pieces as images (including the entire hero image, which I web optimized at 253KB only).
 
+## Cool Features
+
+- Slider is totally custom built using JS and JQuery.
+- Thumbnails are dynamically created based on images provided to list.
+- Clicking either thumbnail, or white dot, will trigger image slide.
+
 ### Twitter Bootstrap
 
 This project uses Twitter Bootstrap for responsiveness. The stylings have been customized for the mockup needs.

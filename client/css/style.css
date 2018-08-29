@@ -141,6 +141,25 @@ html, body {
     .container-fluid #navigation img {
       width: 221px;
       height: 134px; }
+  .container-fluid #navigation-circles {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92px;
+    position: relative;
+    right: 19px;
+    margin-bottom: -19px; }
+    .container-fluid #navigation-circles li {
+      display: inline-block;
+      background-color: #ffffff57;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      margin-right: 3px; }
+    .container-fluid #navigation-circles .selected-circle {
+      background-color: white; }
   .container-fluid #schedule {
     background-image: url(../img/schedule-mountains-background.jpg);
     background-size: cover;
