@@ -1,11 +1,13 @@
 $( document ).ready( function(){
 
   var slideCount = $('.slider ul li').length;
-  var slideWidth = $('.slider ul li').width();
-  var slideHeight = $('.slider ul li').height();
+  var slideWidth = $(window).width();
+  var slideHeight = $(window).height();
   var sliderUlWidth = slideCount * slideWidth;
 
-  $('.slider').css({ width: slideWidth, height: slideHeight });
+  $('.slider').css({ width: slideWidth });
+  $('.slider ul li img').css({ width: slideWidth});
+  $('.slider ul li').css({ width: slideWidth});
 
   $('.slider ul').css({ width: sliderUlWidth });
 
