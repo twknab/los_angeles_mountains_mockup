@@ -80,9 +80,114 @@ $( document ).ready( function(){
   // 3. JQUERY CUSTOM TABS
   //**********************/
 
+  let sched = {
+    scheduleOne: `
+      <tbody>
+        <tr>
+          <td>25 Nov 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr>
+          <td>28 Nov 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr class="empty-row">
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18 Dec 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr class="empty-row">
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7 Jan 2017</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+      </tbody>`,
+    scheduleTwo: `
+      <tbody>
+        <tr>
+          <td>17 Nov 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr class="empty-row">
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13 Dec 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr>
+          <td>28 Dec 2016</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+        <tr class="empty-row">
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9 Feb 2017</td>
+          <td>Vestibulum viverra</td>
+        </tr>
+      </tbody>`,
+  };
+
+  let schedImages = {
+    scheduleOne: "url('./client/img/schedule-mountains-background.jpg",
+    scheduleTwo: "url('./client/img/schedule-mountains-2-background.jpg')",
+  };
+
+  // Show schedule one by default:
+  highlightTab($('#schedule-tabs li:nth-child(1)'));
+  changeContent(sched.scheduleOne, schedImages.scheduleOne);
+
+  // If Mountain 1 is clicked:
+  $('#schedule-tabs li:nth-child(1)').click(function() {
+    event.preventDefault();
+    if (!$(this).hasClass('selected-tab')) {
+      highlightTab($(this));
+      changeContent(sched.scheduleOne, schedImages.scheduleOne);
+    }
+  });
+
+  // If Mountain 2 is clicked:
+  $('#schedule-tabs li:nth-child(2)').click(function() {
+    event.preventDefault();
+    if (!$(this).hasClass('selected-tab')) {
+      highlightTab($(this));
+      changeContent(sched.scheduleTwo, schedImages.scheduleTwo);
+    }
+  });
+
+  // Highlight Tab:
+  function highlightTab(tab) {
+    $(tab).addClass('selected-tab').children('span').addClass('underline');
+    $(tab).siblings().removeClass('selected-tab').children('span').removeClass('underline');
+  }
+
+  // Change Content:
+  function changeContent(schedule, image, selector='') {
+    $(`${selector} #schedule`).css('background-image', image);
+    $(`${selector} table`).html(schedule);
+  }
+
+  
+
   //**********************/
   // 4. JQUERY CUSTOM ACCORDION
   //**********************/
+
+  // Copy default loading schedule (schedule one) into each accordion:
+  $('#schedule').clone().appendTo('.accordion-sched-one');
+  $('#schedule').clone().appendTo('.accordion-sched-two');
+
+  // Update schedule two accordion:
+  changeContent(sched.scheduleTwo, schedImages.scheduleTwo, '.accordion-sched-two');
 
 
 

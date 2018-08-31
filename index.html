@@ -12,6 +12,8 @@
   <!-- Bootstrap CSS  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -119,34 +121,59 @@
         <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue..</p>
       </div>
     </div>
-    <!-- Schedule -->
-    <div class="row" id="schedule">
-      <div class="col-6 text-left">
-        <div id="schedule-box">
-          <h1>Schedule</h1>
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>25 Nov 2016</th>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>28 Nov 2016</th>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>18 Dec 2016</th>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>7 Jan 2017</th>
-                <td>Vestibulum viverra</td>
-              </tr>
-            </tbody>
-          </table>
+    <span id="schedule-tab-wrapper">
+      <!-- Schedule Tabs -->
+      <div class="row align-items-center" id="schedule-navigation">
+        <div class="col-12">
+          <ul id="schedule-tabs">
+            <li><a href="#">Mountain 1</a><span></span></li>
+            <li><a href="#">Mountain 2</a><span></span></li>
+          </ul>
         </div>
       </div>
-      <div class="col-6">
+      <!-- Schedule Boxes -->
+      <div class="row" id="schedule">
+        <div class="col-6 text-left">
+          <div id="schedule-box">
+            <h1>Schedule</h1>
+            <table class="table">
+              <!-- Table Body Gets Injected Here -->
+            </table>
+          </div>
+        </div>
+        <div class="col-6">
+        </div>
+      </div>
+    </span>
+    <!-- Schedule Accordion -->
+    <div class="row align-items-center" id="schedule-accordion">
+      <div class="col-12">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="mb-0">
+                Mountain 1
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body accordion-sched-one">
+                <!-- Schedule Data Injected Here -->
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5 class="mb-0">
+                Mountain 2
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body accordion-sched-two">
+                <!-- Schedule Data Injected Here -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Footer -->

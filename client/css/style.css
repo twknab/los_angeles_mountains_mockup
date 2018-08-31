@@ -160,6 +160,45 @@ html, body {
       margin-right: 3px; }
     .container-fluid #navigation-circles .selected-circle {
       background-color: white; }
+  .container-fluid #schedule-navigation {
+    background-color: #414f6b;
+    height: 40px; }
+    @media screen and (max-width: 720px) {
+      .container-fluid #schedule-navigation {
+        display: none; } }
+  .container-fluid #schedule-tabs {
+    list-style: none;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: #b0b4be; }
+    .container-fluid #schedule-tabs a {
+      color: #b0b4be; }
+      .container-fluid #schedule-tabs a:hover {
+        text-decoration: none;
+        color: #fff; }
+    .container-fluid #schedule-tabs li {
+      display: inline-block;
+      color: #414f6b;
+      background-color: #414f6b;
+      padding: 5px 20px; }
+  .container-fluid .selected-tab {
+    background-color: #b0b4be !important; }
+    .container-fluid .selected-tab .underline {
+      display: block;
+      border-bottom: 1px solid #414f6b;
+      position: relative;
+      bottom: 2px;
+      margin-bottom: -1px; }
+    .container-fluid .selected-tab a {
+      color: #414f6b !important; }
+      .container-fluid .selected-tab a:hover {
+        color: #414f6b !important; }
+  @media screen and (max-width: 720px) {
+    .container-fluid #schedule-tab-wrapper {
+      display: none; } }
   .container-fluid #schedule {
     background-image: url(../img/schedule-mountains-background.jpg);
     background-size: cover;
@@ -182,15 +221,51 @@ html, body {
         font-weight: 500;
         color: #414f6b;
         font-size: 2.2em;
-        margin-bottom: 20px; }
+        margin-bottom: 10px; }
       .container-fluid #schedule #schedule-box table {
         padding-bottom: 2%;
         font-weight: 100; }
         .container-fluid #schedule #schedule-box table tr td {
           border: none;
           padding: .05em; }
-        .container-fluid #schedule #schedule-box table tr:nth-child(3) td, .container-fluid #schedule #schedule-box table tr:nth-child(4) td {
-          padding-top: 7%; }
+        .container-fluid #schedule #schedule-box table .empty-row {
+          padding-top: 20%;
+          display: block; }
+  .container-fluid #schedule-accordion {
+    display: none;
+    border-bottom: 1px solid #63769d; }
+    .container-fluid #schedule-accordion .card {
+      border: 0px; }
+      .container-fluid #schedule-accordion .card h5 {
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        padding: 15px;
+        display: inline-block; }
+      .container-fluid #schedule-accordion .card .card-header {
+        background-color: #b0b4be;
+        color: #414f6b;
+        border: 0px; }
+      .container-fluid #schedule-accordion .card .card-header:after {
+        font-family: 'Font Awesome 5 Free';
+        font-size: 40px;
+        font-weight: 600;
+        content: "\f106";
+        float: right;
+        position: relative;
+        margin-right: 13px; }
+      .container-fluid #schedule-accordion .card .card-header.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\f107"; }
+      .container-fluid #schedule-accordion .card div[aria-expanded="false"] {
+        background-color: #414f6b !important;
+        color: #b0b4be; }
+      .container-fluid #schedule-accordion .card .card-body {
+        padding: 0px; }
+    @media screen and (max-width: 720px) {
+      .container-fluid #schedule-accordion {
+        display: block; } }
   .container-fluid #footer {
     background-color: #414f6b;
     color: #63769d;
