@@ -163,9 +163,6 @@ html, body {
   .container-fluid #schedule-navigation {
     background-color: #414f6b;
     height: 40px; }
-    @media screen and (max-width: 720px) {
-      .container-fluid #schedule-navigation {
-        display: none; } }
   .container-fluid #schedule-tabs {
     list-style: none;
     margin-bottom: 0px;
@@ -196,9 +193,6 @@ html, body {
       color: #414f6b !important; }
       .container-fluid .selected-tab a:hover {
         color: #414f6b !important; }
-  @media screen and (max-width: 720px) {
-    .container-fluid #schedule-tab-wrapper {
-      display: none; } }
   .container-fluid #schedule {
     background-image: url(../img/schedule-mountains-background.jpg);
     background-size: cover;
@@ -282,3 +276,12 @@ html, body {
       font-weight: 900; }
     .container-fluid #footer .footer-nav {
       padding: 0% 16% 0% 21% !important; }
+  @media screen and (max-width: 720px) {
+    .container-fluid #schedule-navigation {
+      display: none; }
+    .container-fluid #schedule-tab-wrapper {
+      display: none; }
+    .container-fluid #schedule-accordion {
+      display: block; }
+    .container-fluid #schedule-box {
+      margin: 0 !important; } }

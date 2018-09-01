@@ -4,7 +4,7 @@ $( document ).ready( function(){
     1. Smooth Scrolling
     2. Jquery Custom Slider
     3. Jquery Custom Tabs
-    4. Jquery Custom Accordian
+    4. Bootstrap Accordian
 
 
   */
@@ -179,7 +179,7 @@ $( document ).ready( function(){
   
 
   //**********************/
-  // 4. JQUERY CUSTOM ACCORDION
+  // 4. BOOTSTRAP ACCORDION
   //**********************/
 
   // Copy default loading schedule (schedule one) into each accordion:

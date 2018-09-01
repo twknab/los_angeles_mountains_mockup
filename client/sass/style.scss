@@ -216,9 +216,6 @@ html, body {
   #schedule-navigation {
     background-color: $darkBlue;
     height: 40px;
-    @media screen and (max-width: 720px){
-      display: none;
-    }
   }
 
   #schedule-tabs {
@@ -261,11 +258,6 @@ html, body {
     }
   }
 
-  #schedule-tab-wrapper {
-    @media screen and (max-width: 720px) {
-      display: none;
-    }
-  }
   #schedule {
     background-image: url(../img/schedule-mountains-background.jpg);
     background-size: cover;
@@ -373,5 +365,25 @@ html, body {
     .footer-nav {
       padding: 0% 16% 0% 21% !important;
     }
+  }
+
+  @media screen and (max-width: 720px) {
+    // Hide schedule tabs:
+    #schedule-navigation {
+      display: none;
+    }
+    // Hide tabbed schedule content:
+    #schedule-tab-wrapper {
+      display: none;
+    }
+    // 
+    #schedule-accordion {
+      display: block;
+    }
+
+    #schedule-box {
+      margin: 0 !important;
+    }
+
   }
 }
