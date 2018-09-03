@@ -377,7 +377,6 @@ body {
 
 #schedule-accordion {
   display: none;
-  border-bottom: 1px solid $lightBlue;
   .card {
     border: 0px;
     h5 {
@@ -392,6 +391,7 @@ body {
       background-color: $scheduleGray;
       color: $darkBlue;
       border: 0px;
+      border-bottom: 1px solid $lightBlue;
     }
     .card-header:after {
       font-family: 'Font Awesome 5 Free';
@@ -449,6 +449,8 @@ body {
 /*************************/  
 /*   10. MEDIA QUERIES   */
 /*************************/
+// Note: Media queries are organized descending from largest view port to least.
+
 @media screen and (min-width: 1700px) {
   .slide-description {
     margin-top: 8%;
@@ -647,10 +649,10 @@ body {
 @media screen and (max-width: 549px) {
   #footer {
     height: 106px;
-  }
-  .navbar-brand {
-    margin-right: auto;
-    margin-left: auto;
+    .navbar-brand {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
   .footer-text {
     margin-left: auto;
@@ -660,6 +662,16 @@ body {
   }
   .footer-nav {
     margin-top: 2%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .slides {
+    margin-top: -522px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .slides {
+    margin-top: -547px;
   }
 }
 @media screen and (max-width: 511px) {

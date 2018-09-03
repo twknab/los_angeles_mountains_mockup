@@ -289,8 +289,7 @@ body {
         display: block; }
 
 #schedule-accordion {
-  display: none;
-  border-bottom: 1px solid #63769d; }
+  display: none; }
   #schedule-accordion .card {
     border: 0px; }
     #schedule-accordion .card h5 {
@@ -303,7 +302,8 @@ body {
     #schedule-accordion .card .card-header {
       background-color: #b0b4be;
       color: #414f6b;
-      border: 0px; }
+      border: 0px;
+      border-bottom: 1px solid #63769d; }
     #schedule-accordion .card .card-header:after {
       font-family: 'Font Awesome 5 Free';
       font-size: 40px;
@@ -469,9 +469,9 @@ body {
 @media screen and (max-width: 549px) {
   #footer {
     height: 106px; }
-  .navbar-brand {
-    margin-right: auto;
-    margin-left: auto; }
+    #footer .navbar-brand {
+      margin-right: auto;
+      margin-left: auto; }
   .footer-text {
     margin-left: auto;
     margin-right: auto;
@@ -479,6 +479,14 @@ body {
     font-size: .5em; }
   .footer-nav {
     margin-top: 2%; } }
+
+@media screen and (max-width: 426px) {
+  .slides {
+    margin-top: -522px; } }
+
+@media screen and (max-width: 426px) {
+  .slides {
+    margin-top: -547px; } }
 
 @media screen and (max-width: 511px) {
   .slider-images li img {

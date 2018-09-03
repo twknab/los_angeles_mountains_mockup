@@ -1,19 +1,21 @@
 $( document ).ready( function(){
 
   /*
+  //**********************/
+  // CONTENTS
+  //**********************/
+  /*
     1. Smooth Scrolling
     2. Jquery Custom Slider
     3. Jquery Custom Tabs
     4. Bootstrap Accordian
-
-
   */
 
   //**********************/
   // 1. SMOOTH SCROLLING
   //**********************/
 
-  // Add smooth scrolling to all on-page anchor links that are not empty:
+  // Add smooth scrolling to all on-page anchor links (e.g, href="#{something}") that are not empty:
   $('a[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       || location.hostname == this.hostname) {
@@ -82,9 +84,39 @@ $( document ).ready( function(){
     $('#navigation li a')[i].innerHTML = `<img src="${$(`.slides ul #image_${i + 1} img`).attr('src')}">`;
   });
 
-  $('#scroll-right').click(function(){
-    console.log("GOING RIGHT");
+  console.log("hey");
+
+  $('img').click(function() {
+    console.log('tes');
+  })
+
+  // Handle click functions on white dots or thumbnails and trigger scroll animation:
+  $('.navigation img, #navigation-circles li').click(function() {
+
+    console.log("CLICKED");
+
+    // Prevent link action:
+    event.preventDefault();
+
+    // Gathers id from photo (or if a circle is clicked, removes `circle_X` from the circle ID)
+    let id = this.id.replace('circle_', '');
+
+    // Animate slider:
+    $('.slides ul').animate({
+      left: - id * slideWidth,
+    }, 500, "swing", function() {
+      // Call back functions runs after animation, updates class for chosen bullet point:
+      $.each($('#navigation-circles')[0].children, function(i, val) {
+        let bullet = $(this);
+        if ($('#navigation-circles')[0].children[i].id == `circle_${id}`) {
+          $(bullet).addClass('selected-circle');
+        } else {
+          $(bullet).removeClass('selected-circle');
+        }
+      });
+    });
   });
+  
 
 
   //**********************/
