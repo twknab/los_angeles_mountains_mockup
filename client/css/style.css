@@ -1,7 +1,39 @@
+/*************************/
+/*        CONTENTS       */
+/*************************/
+/*
+  1. FONTS & SASS VARIABLES
+  2. GENERAL
+  3. NAVBAR
+  4. HERO IMAGE
+  5. STICKY NAV
+  6. SLIDER NAVIGATION
+  7. TEAM SCHEDULE / CLIMB
+  8. SCHEDULE SECTION
+  9. FOOTER
+  10. MEDIA QUERIES
+*/
+/********************************/
+/*  1. FONTS & SASS VARIABLES   */
+/********************************/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900i|Oswald:400,500,600,700");
+/*************************/
+/*       2. GENERAL      */
+/*************************/
 html, body {
   height: 100%; }
 
+body {
+  overflow-x: hidden; }
+
+.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  overflow-x: hidden; }
+
+/*************************/
+/*      3. NAVBAR        */
+/*************************/
 .navbar {
   padding: 0% 15% 0% 21% !important; }
   .navbar ul li {
@@ -22,6 +54,104 @@ html, body {
   padding: 0px 0px 1px 0px !important;
   margin: 0px 25px; }
 
+/*************************/
+/*     4. HERO IMAGE     */
+/*************************/
+#hero-image {
+  background-image: url(../img/los-angeles-mountains-hero-image.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+  #hero-image div {
+    padding-bottom: 48%; }
+    #hero-image div nav {
+      background-color: none !important; }
+      #hero-image div nav ul li {
+        color: white; }
+      #hero-image div nav ul a {
+        color: white !important;
+        border-bottom: 1px solid white; }
+        #hero-image div nav ul a:hover {
+          color: #414f6b !important;
+          border-bottom-color: #414f6b; }
+    #hero-image div ul {
+      list-style: none; }
+
+/*************************/
+/*    5. STICKY NAV      */
+/*************************/
+#sticky-nav div ul li {
+  color: #414f6b; }
+
+#sticky-nav div ul a {
+  color: #414f6b !important;
+  border-bottom: 1px solid #414f6b; }
+  #sticky-nav div ul a:hover {
+    color: #939393 !important;
+    border-bottom-color: #939393; }
+
+/***************************/
+/*  6. SLIDER NAVIGATION   */
+/***************************/
+#team {
+  margin-top: -28px;
+  padding-bottom: 1.7%; }
+
+.navigation {
+  background-color: #414f6bdb;
+  display: inline-block;
+  height: 197px;
+  width: 100%;
+  margin-top: -17%;
+  position: relative;
+  bottom: 69px;
+  margin-bottom: -69px; }
+  .navigation li {
+    display: inline;
+    margin-right: 6px; }
+  .navigation img {
+    width: 221px !important;
+    height: 134px !important; }
+
+#navigation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 921px;
+  display: block;
+  position: relative;
+  top: 26px; }
+
+.slide-description {
+  z-index: 1000;
+  position: relative;
+  margin-left: 17%;
+  margin-left: 19%;
+  margin-top: 1.5%; }
+
+.slides {
+  z-index: -100;
+  width: 100%;
+  padding: 0px;
+  margin-top: -509px; }
+  .slides ul {
+    list-style: none;
+    display: inline-block;
+    width: 502%;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px; }
+    .slides ul li {
+      display: inline; }
+  .slides .slider-images li {
+    width: 100%; }
+    .slides .slider-images li img {
+      width: 19.92%;
+      position: relative; }
+
 .section-number,
 .section-title {
   font-family: 'Oswald', sans-serif; }
@@ -30,7 +160,9 @@ html, body {
   font-size: 9.3em;
   font-weight: 600;
   color: #414f6ba1;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: -27px; }
 
 .section-title {
   text-transform: uppercase;
@@ -44,244 +176,348 @@ html, body {
 
 .section-text {
   font-family: 'Lato', sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  width: 780px;
+  line-height: 1.64;
+  margin-left: 5%; }
 
+#navigation-circles {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+  top: 14px;
+  margin-bottom: -19px;
+  text-align: center; }
+  #navigation-circles li {
+    display: inline-block;
+    background-color: #ffffff57;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-right: 3px; }
+  #navigation-circles .selected-circle {
+    background-color: white; }
+
+/***************************/
+/*  7. TEAM SECTION/CLIMB  */
+/***************************/
 #team div:nth-child(2) p {
   position: relative;
-  top: 9px;
-  right: 148px;
+  top: 22px;
+  right: 173px;
   margin-right: 9%;
   font-weight: 100; }
 
 #climb-column {
   padding-left: 23% !important; }
 
-.container-fluid {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-  overflow-x: hidden; }
-  .container-fluid #hero-image {
-    background-image: url(../img/los-angeles-mountains-hero-image.jpg);
-    background-size: cover;
-    background-position: 25% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; }
-    .container-fluid #hero-image div {
-      padding-bottom: 48%; }
-      .container-fluid #hero-image div nav {
-        background-color: none !important; }
-        .container-fluid #hero-image div nav ul li {
-          color: white; }
-        .container-fluid #hero-image div nav ul a {
-          color: white !important;
-          border-bottom: 1px solid white; }
-          .container-fluid #hero-image div nav ul a:hover {
-            color: #414f6b !important;
-            border-bottom-color: #414f6b; }
-      .container-fluid #hero-image div ul {
-        list-style: none; }
-  .container-fluid #sticky-nav div ul li {
-    color: #414f6b; }
-  .container-fluid #sticky-nav div ul a {
-    color: #414f6b !important;
-    border-bottom: 1px solid #414f6b; }
-    .container-fluid #sticky-nav div ul a:hover {
-      color: #939393 !important;
-      border-bottom-color: #939393; }
-  .container-fluid #history-slider {
-    background-image: url(../img/history-mountains-background.jpg);
-    background-size: cover;
-    background-position: 25% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; }
-    .container-fluid #history-slider div:nth-child(2) {
-      margin-top: 27%;
-      background-color: #414f6bdb;
-      height: 197px; }
-  .container-fluid #history-text {
-    z-index: 100;
-    position: absolute;
-    width: 795px;
-    margin-left: 19%;
-    margin-top: 1.5%; }
-  .container-fluid .slider {
-    width: 1600px;
-    height: 905px;
-    overflow: hidden;
-    position: relative; }
-    .container-fluid .slider ul {
+/**************************/
+/*  8. SCHEDULE SECTION   */
+/**************************/
+#schedule-navigation {
+  background-color: #414f6b;
+  height: 40px; }
+
+#schedule-tabs {
+  list-style: none;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  color: #b0b4be;
+  margin-left: 18%; }
+  #schedule-tabs a {
+    color: #b0b4be; }
+    #schedule-tabs a:hover {
+      text-decoration: none;
+      color: #fff; }
+  #schedule-tabs li {
+    display: inline-block;
+    color: #414f6b;
+    background-color: #414f6b;
+    padding: 5px 20px; }
+
+.selected-tab {
+  background-color: #b0b4be !important; }
+  .selected-tab .underline {
+    display: block;
+    border-bottom: 1px solid #414f6b;
+    position: relative;
+    bottom: 2px;
+    margin-bottom: -1px; }
+  .selected-tab a {
+    color: #414f6b !important; }
+    .selected-tab a:hover {
+      color: #414f6b !important; }
+
+#schedule {
+  background-image: url(../img/schedule-mountains-background.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+  #schedule #schedule-box {
+    margin: 13% 2% 29% 43%;
+    width: 352px;
+    padding-left: 6%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    background-color: #ffffffa3;
+    font-family: 'Lato', sans-serif; }
+    #schedule #schedule-box h1 {
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      color: #414f6b;
+      font-size: 2.2em;
+      margin-bottom: 10px; }
+    #schedule #schedule-box table {
+      padding-bottom: 2%;
+      font-weight: 100; }
+      #schedule #schedule-box table tr td {
+        border: none;
+        padding: .05em; }
+      #schedule #schedule-box table .empty-row {
+        padding-top: 20%;
+        display: block; }
+
+#schedule-accordion {
+  display: none;
+  border-bottom: 1px solid #63769d; }
+  #schedule-accordion .card {
+    border: 0px; }
+    #schedule-accordion .card h5 {
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 2em;
+      padding: 15px;
+      display: inline-block; }
+    #schedule-accordion .card .card-header {
+      background-color: #b0b4be;
+      color: #414f6b;
+      border: 0px; }
+    #schedule-accordion .card .card-header:after {
+      font-family: 'Font Awesome 5 Free';
+      font-size: 40px;
+      font-weight: 600;
+      content: "\f106";
+      float: right;
       position: relative;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .container-fluid .slider ul li {
-        position: relative;
-        float: left;
-        width: 1600px;
-        height: 905px; }
-  .container-fluid #slider-column {
-    z-index: -1000; }
-  .container-fluid #navigation-slider {
-    background-color: #414f6bdb;
-    height: 197px;
-    margin-top: -197px; }
-  .container-fluid #navigation {
-    margin-left: 19%; }
-    .container-fluid #navigation ul {
-      list-style: none;
-      display: inline-block;
-      margin-bottom: 0px; }
-      .container-fluid #navigation ul li {
-        display: inline;
-        margin-right: 6px; }
-    .container-fluid #navigation img {
-      width: 221px;
-      height: 134px; }
-  .container-fluid #navigation-circles {
-    list-style: none;
+      margin-right: 13px; }
+    #schedule-accordion .card .card-header.collapsed:after {
+      /* symbol for "collapsed" panels */
+      content: "\f107"; }
+    #schedule-accordion .card div[aria-expanded="false"] {
+      background-color: #414f6b !important;
+      color: #b0b4be; }
+    #schedule-accordion .card .card-body {
+      padding: 0px; }
+  @media screen and (max-width: 720px) {
+    #schedule-accordion {
+      display: block; }
+      #schedule-accordion .card-header {
+        cursor: pointer; } }
+
+/*************************/
+/*       9. FOOTER       */
+/*************************/
+#footer {
+  background-color: #414f6b;
+  color: #63769d;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  height: 82px; }
+  #footer div {
+    height: 81px; }
+    #footer div nav {
+      height: 81px; }
+  #footer p {
+    margin: 0px !important;
+    font-weight: 900; }
+  #footer .footer-nav {
+    padding: 0% 16% 0% 21%; }
+
+/*************************/
+/*   10. MEDIA QUERIES   */
+/*************************/
+@media screen and (min-width: 1700px) {
+  .slide-description {
+    margin-top: 8%; }
+  .section-text {
+    width: 980px; } }
+
+@media screen and (min-width: 1600px) {
+  .slider-images li img {
+    width: 25% !important; } }
+
+@media screen and (max-width: 1550px) {
+  #team div:nth-child(2) p {
+    top: 22px;
+    right: 103px; } }
+
+@media screen and (max-width: 1465px) {
+  #navigation {
     margin-left: auto;
     margin-right: auto;
-    width: 92px;
+    width: 915px; }
+    #navigation ul {
+      padding-left: 0px; } }
+
+@media screen and (max-width: 1370px) {
+  .slider-images li img {
+    width: 27% !important; }
+  #team div:nth-child(2) p {
+    top: 22px;
+    right: 50px; }
+  .section-text {
+    margin-left: 0px; }
+  .slide-description {
+    margin-left: 15%; } }
+
+@media screen and (max-width: 1133px) {
+  #climb-column {
+    padding-left: 10% !important; }
+  #team {
+    padding-bottom: 3%; } }
+
+@media screen and (max-width: 978px) {
+  .slider-images li img {
+    width: 37% !important;
+    right: 185px; }
+  #navigation {
+    width: 745px; }
+  .navigation {
+    height: 164px !important;
+    bottom: 70px; }
+    .navigation img {
+      width: 177px !important;
+      height: 100px !important; }
+  #navigation-circles {
+    top: 13px; }
+  .section-text {
+    width: 580px; } }
+
+@media screen and (max-width: 778px) {
+  .slider-images li img {
+    width: 47% !important;
+    right: 185px; }
+  .section-text {
+    width: 78%; }
+  .section-text-climb p {
+    top: 0px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 25px;
+    line-height: 1.64; }
+  .navigation {
+    bottom: 93px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto; }
+    .navigation li {
+      margin-right: 0px; }
+  #navigation {
+    width: 721px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto; }
+  #history .slides .navigation {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto; }
+  #navigation-circles {
+    display: none; } }
+
+@media screen and (max-width: 749px) {
+  .footer-nav {
+    padding: 0 7% !important; } }
+
+@media screen and (max-width: 720px) {
+  #schedule-navigation {
+    display: none; }
+  #schedule-tab-wrapper {
+    display: none; }
+  #schedule-accordion {
+    display: block; }
+  #schedule-box {
+    margin: 0 !important; } }
+
+@media screen and (max-width: 683px) {
+  .navbar {
+    padding: 0% 1% 0% 1% !important; }
+  .navigation {
+    bottom: 93px; }
+  .slide-description {
+    margin-left: 0px;
+    margin: 5%; }
+  .section-text {
+    background-color: #ffffffa3;
+    padding: 20px;
     position: relative;
-    right: 19px;
-    margin-bottom: -19px; }
-    .container-fluid #navigation-circles li {
-      display: inline-block;
-      background-color: #ffffff57;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      margin-right: 3px; }
-    .container-fluid #navigation-circles .selected-circle {
-      background-color: white; }
-  .container-fluid #schedule-navigation {
-    background-color: #414f6b;
-    height: 40px; }
-  .container-fluid #schedule-tabs {
-    list-style: none;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 1.25em;
-    color: #b0b4be; }
-    .container-fluid #schedule-tabs a {
-      color: #b0b4be; }
-      .container-fluid #schedule-tabs a:hover {
-        text-decoration: none;
-        color: #fff; }
-    .container-fluid #schedule-tabs li {
-      display: inline-block;
-      color: #414f6b;
-      background-color: #414f6b;
-      padding: 5px 20px; }
-  .container-fluid .selected-tab {
-    background-color: #b0b4be !important; }
-    .container-fluid .selected-tab .underline {
-      display: block;
-      border-bottom: 1px solid #414f6b;
-      position: relative;
-      bottom: 2px;
-      margin-bottom: -1px; }
-    .container-fluid .selected-tab a {
-      color: #414f6b !important; }
-      .container-fluid .selected-tab a:hover {
-        color: #414f6b !important; }
-  .container-fluid #schedule {
-    background-image: url(../img/schedule-mountains-background.jpg);
-    background-size: cover;
-    background-position: 25% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; }
-    .container-fluid #schedule #schedule-box {
-      margin: 13% 2% 29% 43%;
-      width: 352px;
-      padding-left: 6%;
-      padding-bottom: 1%;
-      padding-top: 2%;
-      background-color: #ffffffa3;
-      font-family: 'Lato', sans-serif; }
-      .container-fluid #schedule #schedule-box h1 {
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 500;
-        color: #414f6b;
-        font-size: 2.2em;
-        margin-bottom: 10px; }
-      .container-fluid #schedule #schedule-box table {
-        padding-bottom: 2%;
-        font-weight: 100; }
-        .container-fluid #schedule #schedule-box table tr td {
-          border: none;
-          padding: .05em; }
-        .container-fluid #schedule #schedule-box table .empty-row {
-          padding-top: 20%;
-          display: block; }
-  .container-fluid #schedule-accordion {
-    display: none;
-    border-bottom: 1px solid #63769d; }
-    .container-fluid #schedule-accordion .card {
-      border: 0px; }
-      .container-fluid #schedule-accordion .card h5 {
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 500;
-        font-size: 2em;
-        padding: 15px;
-        display: inline-block; }
-      .container-fluid #schedule-accordion .card .card-header {
-        background-color: #b0b4be;
-        color: #414f6b;
-        border: 0px; }
-      .container-fluid #schedule-accordion .card .card-header:after {
-        font-family: 'Font Awesome 5 Free';
-        font-size: 40px;
-        font-weight: 600;
-        content: "\f106";
-        float: right;
-        position: relative;
-        margin-right: 13px; }
-      .container-fluid #schedule-accordion .card .card-header.collapsed:after {
-        /* symbol for "collapsed" panels */
-        content: "\f107"; }
-      .container-fluid #schedule-accordion .card div[aria-expanded="false"] {
-        background-color: #414f6b !important;
-        color: #b0b4be; }
-      .container-fluid #schedule-accordion .card .card-body {
-        padding: 0px; }
-    @media screen and (max-width: 720px) {
-      .container-fluid #schedule-accordion {
-        display: block; } }
-  .container-fluid #footer {
-    background-color: #414f6b;
-    color: #63769d;
-    text-transform: uppercase;
-    font-style: italic;
-    font-family: 'Lato', sans-serif;
-    height: 82thepx; }
-    .container-fluid #footer div {
-      height: 81px; }
-      .container-fluid #footer div nav {
-        height: 81px; }
-    .container-fluid #footer p {
-      margin: 0px !important;
-      font-weight: 900; }
-    .container-fluid #footer .footer-nav {
-      padding: 0% 16% 0% 21% !important; }
-  @media screen and (max-width: 720px) {
-    .container-fluid #schedule-navigation {
-      display: none; }
-    .container-fluid #schedule-tab-wrapper {
-      display: none; }
-    .container-fluid #schedule-accordion {
-      display: block; }
-    .container-fluid #schedule-box {
-      margin: 0 !important; } }
+    top: 30px; }
+  .footer-nav {
+    padding: 0 7% !important; } }
+
+@media screen and (max-width: 549px) {
+  #footer {
+    height: 106px; }
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: auto; }
+  .footer-text {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: .5em; }
+  .footer-nav {
+    margin-top: 2%; } }
+
+@media screen and (max-width: 511px) {
+  .slider-images li img {
+    width: 65% !important;
+    right: 185px; }
+  .navigation {
+    bottom: 93px; }
+  .nav-link {
+    margin: 0px 7px; } }
+
+@media screen and (max-width: 375px) {
+  #sticky-nav img {
+    display: none; }
+  #sticky-nav .navbar {
+    padding: 0% 5% 0% 1% !important; }
+  .slider-images li img {
+    width: 75% !important;
+    right: 185px; }
+  .slides {
+    margin-top: -592px; }
+  .navigation {
+    bottom: 126px; }
+  .section-text-climb p {
+    margin-bottom: 16%; }
+  .text-left {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    flex: none !important;
+    max-width: 100% !important; }
+  #schedule-box {
+    width: 100% !important; } }
+
+@media screen and (max-width: 354px) {
+  .navigation {
+    bottom: 104px; } }
+
+@media screen and (max-width: 329px) {
+  .navigation {
+    bottom: 110px; }
+  .slider-images li img {
+    width: 79% !important;
+    right: 185px; } }

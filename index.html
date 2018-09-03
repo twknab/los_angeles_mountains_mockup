@@ -55,55 +55,33 @@
         </nav>
       </div>
     </div>
-    <!-- History Custom Slider -->
-    <div class="row align-items-start" id="history">
-      <div class="col-12" id="slider-column">
-        <span id="history-text">
-          <h1 class="section-number">01.</h1>
-          <h2 class="section-title">History</h2>
-          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin
-          at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque
+    <div class="row" id="history">
+      <div class="col-12 slide-description">
+        <h1 class="section-number">01.</h1>
+        <h3 class="section-title">History</h3>
+        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat
+          rutrum, consectetur mi. Proin
+          at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed
+          dignissim Pellentesque
           urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
-        </span>
-        <div class="slider">
-          <ul>
-            <li id="image_0">
-              <img src="./client/img/history-mountains-background.jpg">
-            </li>
-            <li id="image_1">
-              <img src="./client/img/slide-man-overlooking-valley.jpg">
-            </li>
-            <li id="image_2">
-              <img src="./client/img/slide-group-valley.jpg">
-            </li>
-            <li id="image_3">
-              <img src="./client/img/slide-man-overlooking-valley.jpg">
-            </li>
-            <li id="image_4">
-              <img src="./client/img/slide-group-valley.jpg">
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-    <div class="row align-items-center" id="navigation-slider">
-        <div class="col-12" id="navigation-column">
-          <div id="navigation">
-            <ul>
-              <li>
-                <a href="#" id="1"></a>
-              </li>
-              <li>
-                <a href="#" id="2"></a>
-              </li>
-              <li>
-                <a href="#" id="3"></a>
-              </li>
-              <li>
-                <a href="#" id="4"></a>
-              </li>
-            </ul>
-          </div>
+      <div class="col-12 slides">
+        <ul class="slider-images">
+          <li id="image_0"><img src="./client/img/history-mountains-background.jpg"></li>
+          <li style="display: none;" id="image_1"><img src="./client/img/slide-man-overlooking-valley.jpg"
+              class=""></li>
+          <li style="display: none;" id="image_2"><img src="./client/img/slide-group-valley.jpg" class="img-responsive"></li>
+          <li style="display: none;" id="image_3"><img src="./client/img/slide-man-overlooking-valley.jpg"
+              class="img-responsive"></li>
+          <li style="display: none;" id="image_4"><img src="./client/img/slide-group-valley.jpg" class="img-responsive"></li>
+        </ul>
+        <div class="navigation">
+          <ul id="navigation">
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src=""></a></li>
+            <li><a href="#"><img src=""></a></li>
+          </ul>
           <ul id="navigation-circles">
             <li id="circle_1"></li>
             <li id="circle_2"></li>
@@ -111,14 +89,15 @@
             <li id="circle_4"></li>
           </ul>
         </div>
+      </div>
     </div>
     <!-- Climb -->
     <div class="row align-items-center" id="team">
-      <div class="col-6" id="climb-column">
+      <div class="col-md-6" id="climb-column">
         <h1 class="section-number">02.</h1>
         <h2 class="section-title">Climb</h2>
       </div>
-      <div class="col-6">
+      <div class="col-md-6 section-text-climb">
         <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue..</p>
       </div>
     </div>
@@ -184,7 +163,7 @@
             <a class="navbar-brand" href="/">
               <img src="./client/img/logo-full-footer.png" alt="Los Angeles Mountains">
             </a>
-            <ul class="nav justify-content-end">
+            <ul class="nav justify-content-end footer-text">
               <li class="nav-item">
                 <p class="text-right">Copyright 2016. All Rights Reserved.</p>
               </li>
