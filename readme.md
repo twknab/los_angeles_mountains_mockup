@@ -24,3 +24,7 @@ This project uses Twitter Bootstrap for responsiveness. The stylings have been c
 ### Gulp
 
 This project uses Gulp to process the SCSS to CSS. I've included gulp and gulp-sass to the dev dependencies in `package.json`. Once the dependencies are installed on your local machine, you can run `gulp watch` so that any changes to the SCSS file is automatically generated into CSS. If you need any help, please message me.
+
+#### Minimum Screen Size
+
+This project supports down to 320px width viewports - scaling down further for even smaller viewports would require additional media queries.
